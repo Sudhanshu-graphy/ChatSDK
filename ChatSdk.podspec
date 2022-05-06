@@ -24,8 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "TestTestTestTestTestTestTestTestTestTestTestTest"
 
   spec.homepage     = "http://EXAMPLE/ChatSdk"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "http://EXAMPLE/ChatSdk"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ChatSdk.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Sudhanshu-graphy/ChatSDK.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -134,18 +133,18 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-  s.framework = "UIKit"
-  s.dependency 'Alamofire', '~> 4.7'
-  s.dependency 'MBProgressHUD', '~> 1.1.0'
-  s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
-  s.dependency 'PanModal'
-  s.dependency 'NextGrowingTextView'
-  s.dependency 'ImageScout'
-  s.dependency 'SDWebImage'
-  s.dependency 'SwiftyMarkdown'
-  s.dependency 'emojidataios'
-  s.dependency 'ViewPager-Swift'
-  s.dependency 'ObjectMapper'
+  spec.framework = "UIKit"
+  spec.dependency 'Alamofire', '~> 4.7'
+  spec.dependency 'MBProgressHUD', '~> 1.1.0'
+  spec.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
+  spec.dependency 'PanModal'
+  spec.dependency 'NextGrowingTextView'
+  spec.dependency 'ImageScout'
+  spec.dependency 'SDWebImage'
+  spec.dependency 'SwiftyMarkdown'
+  spec.dependency 'emojidataios'
+  spec.dependency 'ViewPager-Swift'
+  spec.dependency 'ObjectMapper'
 end
 
 

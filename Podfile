@@ -13,4 +13,5 @@ target 'ChatSdk' do
     pod 'emojidataios'
     pod 'ViewPager-Swift'
     pod 'ObjectMapper'
+    pod 'ChatSdk'
 end

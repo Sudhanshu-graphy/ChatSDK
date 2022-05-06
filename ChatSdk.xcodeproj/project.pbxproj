@@ -11,6 +11,7 @@
 		48E38FAB28251E6A00101C99 /* ChatSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E38FA028251E6A00101C99 /* ChatSdk.framework */; };
 		48E38FB028251E6A00101C99 /* ChatSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E38FAF28251E6A00101C99 /* ChatSdkTests.swift */; };
 		48E38FB128251E6A00101C99 /* ChatSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E38FA328251E6A00101C99 /* ChatSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5236101F6F49F00447B5576 /* libPods-ChatSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A14B0371A528275452BC728C /* libPods-ChatSdk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,9 @@
 		48E38FA428251E6A00101C99 /* ChatSdk.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ChatSdk.docc; sourceTree = "<group>"; };
 		48E38FAA28251E6A00101C99 /* ChatSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E38FAF28251E6A00101C99 /* ChatSdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSdkTests.swift; sourceTree = "<group>"; };
+		51B344F2BCE6B29C9F0722A4 /* Pods-ChatSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatSdk.debug.xcconfig"; path = "Target Support Files/Pods-ChatSdk/Pods-ChatSdk.debug.xcconfig"; sourceTree = "<group>"; };
+		943B135AAE2795F83D77CCC7 /* Pods-ChatSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatSdk.release.xcconfig"; path = "Target Support Files/Pods-ChatSdk/Pods-ChatSdk.release.xcconfig"; sourceTree = "<group>"; };
+		A14B0371A528275452BC728C /* libPods-ChatSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatSdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5236101F6F49F00447B5576 /* libPods-ChatSdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 				48E38FA228251E6A00101C99 /* ChatSdk */,
 				48E38FAE28251E6A00101C99 /* ChatSdkTests */,
 				48E38FA128251E6A00101C99 /* Products */,
+				75C1D47A9254F91D334E1C95 /* Pods */,
+				94223C5A580A34CF4441B05B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,24 @@
 			path = ChatSdkTests;
 			sourceTree = "<group>";
 		};
+		75C1D47A9254F91D334E1C95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51B344F2BCE6B29C9F0722A4 /* Pods-ChatSdk.debug.xcconfig */,
+				943B135AAE2795F83D77CCC7 /* Pods-ChatSdk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94223C5A580A34CF4441B05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A14B0371A528275452BC728C /* libPods-ChatSdk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -103,10 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48E38FB428251E6A00101C99 /* Build configuration list for PBXNativeTarget "ChatSdk" */;
 			buildPhases = (
+				DA4C38BCF3706661B11E2953 /* [CP] Check Pods Manifest.lock */,
 				48E38F9B28251E6A00101C99 /* Headers */,
 				48E38F9C28251E6A00101C99 /* Sources */,
 				48E38F9D28251E6A00101C99 /* Frameworks */,
 				48E38F9E28251E6A00101C99 /* Resources */,
+				DA5AA307F2B5AEC7B4B8F99C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +215,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA4C38BCF3706661B11E2953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatSdk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5AA307F2B5AEC7B4B8F99C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatSdk/Pods-ChatSdk-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatSdk/Pods-ChatSdk-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatSdk/Pods-ChatSdk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48E38F9C28251E6A00101C99 /* Sources */ = {
@@ -341,6 +410,7 @@
 		};
 		48E38FB528251E6A00101C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B344F2BCE6B29C9F0722A4 /* Pods-ChatSdk.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -369,6 +439,7 @@
 		};
 		48E38FB628251E6A00101C99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943B135AAE2795F83D77CCC7 /* Pods-ChatSdk.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
