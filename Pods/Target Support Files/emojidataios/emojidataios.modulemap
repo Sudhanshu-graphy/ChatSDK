@@ -1,0 +1,6 @@
+module emojidataios {
+  umbrella header "emojidataios-umbrella.h"
+
+  export *
+  module * { export * }
+}

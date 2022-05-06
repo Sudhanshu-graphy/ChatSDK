@@ -1,0 +1,1 @@
+../../../Target Support Files/NextGrowingTextView/NextGrowingTextView-umbrella.h

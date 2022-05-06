@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Pop Up Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ImagePopUpController" id="BYZ-38-t0r" customClass="ImagePopUpController" customModule="Graphy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="579-4v-vtE" customClass="SliderView" customModule="Graphy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-ez-nFg">
+                                <rect key="frame" x="15" y="49" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="EbT-D6-nst"/>
+                                    <constraint firstAttribute="width" constant="32" id="JU9-zb-KFQ"/>
+                                </constraints>
+                                <state key="normal" image="imageCrossIcon" backgroundImage="ImageCrossBg"/>
+                                <connections>
+                                    <action selector="dismissButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yF3-aD-G1b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="579-4v-vtE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5k0-V1-BXt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="579-4v-vtE" secondAttribute="bottom" id="Eol-qj-0Nt"/>
+                            <constraint firstItem="579-4v-vtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Imc-54-w1z"/>
+                            <constraint firstItem="f6h-ez-nFg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="g6b-OM-pJj"/>
+                            <constraint firstItem="579-4v-vtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p8t-4q-Rcj"/>
+                            <constraint firstItem="f6h-ez-nFg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="r5d-LE-QwJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderView" destination="579-4v-vtE" id="Y4K-dR-nVq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImageCrossBg" width="32" height="32"/>
+        <image name="imageCrossIcon" width="13" height="13"/>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

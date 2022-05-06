@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (4.9.1)
+  - emojidataios (0.6.0)
+  - ImageScout (2.0.0)
+  - MBProgressHUD (1.1.0)
+  - NextGrowingTextView (1.6.1)
+  - ObjectMapper (4.2.0)
+  - PanModal (1.2.7)
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SwiftyMarkdown (1.2.3)
+  - ViewPager-Swift (2.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - emojidataios
+  - ImageScout
+  - MBProgressHUD (~> 1.1.0)
+  - NextGrowingTextView
+  - ObjectMapper
+  - PanModal
+  - SDWebImage
+  - Socket.IO-Client-Swift (~> 15.2.0)
+  - SwiftyMarkdown
+  - ViewPager-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - emojidataios
+    - ImageScout
+    - MBProgressHUD
+    - NextGrowingTextView
+    - ObjectMapper
+    - PanModal
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyMarkdown
+    - ViewPager-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  emojidataios: efa99e6c6c588c2fa82f8d86421c4c7c29d384e8
+  ImageScout: 12b86761ee58beb8c8f20d8515a792828bb8bbc5
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  NextGrowingTextView: 3b34f8f10b49b10bd58b61c476ca9b1c58cad380
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftyMarkdown: be01b2905694bd7bfd95330cd43704bfdb978aec
+  ViewPager-Swift: 92fa2a54d56998c85526eaaafc4b7b3f4830ca36
+
+PODFILE CHECKSUM: 91cf24e41f63de13a2128f4aed6e1513d8d0dc25
+
+COCOAPODS: 1.11.2

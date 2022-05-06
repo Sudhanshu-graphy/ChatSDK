@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChatMessagesEmojiCell" customModule="Graphy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-n2-dj0">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyO-8i-xZV" userLabel="emoji">
+                                <rect key="frame" x="4" y="2" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Ajz-sI-GG5"/>
+                                    <constraint firstAttribute="height" constant="20" id="fnr-3V-s1n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxT-zr-eN8">
+                                <rect key="frame" x="24" y="12" width="102" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addEmojiIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gly-9Y-zR9">
+                                <rect key="frame" x="56.5" y="21.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="fMH-qn-WGN"/>
+                                    <constraint firstAttribute="height" constant="15" id="yOF-Kc-Ewe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tyO-8i-xZV" firstAttribute="leading" secondItem="5vi-n2-dj0" secondAttribute="leading" constant="4" id="Syr-9F-dXy"/>
+                            <constraint firstItem="gly-9Y-zR9" firstAttribute="centerX" secondItem="5vi-n2-dj0" secondAttribute="centerX" id="WDk-U5-ncm"/>
+                            <constraint firstItem="CxT-zr-eN8" firstAttribute="centerY" secondItem="tyO-8i-xZV" secondAttribute="centerY" id="bQW-m7-Q0Y"/>
+                            <constraint firstItem="gly-9Y-zR9" firstAttribute="centerY" secondItem="5vi-n2-dj0" secondAttribute="centerY" id="f8I-ys-w4m"/>
+                            <constraint firstItem="CxT-zr-eN8" firstAttribute="leading" secondItem="tyO-8i-xZV" secondAttribute="trailing" id="nPw-LO-hyH"/>
+                            <constraint firstAttribute="trailing" secondItem="CxT-zr-eN8" secondAttribute="trailing" constant="2" id="qed-rJ-dVV"/>
+                            <constraint firstItem="tyO-8i-xZV" firstAttribute="top" secondItem="5vi-n2-dj0" secondAttribute="top" constant="2" id="un5-pa-k2h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="5vi-n2-dj0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="46G-p1-JNz"/>
+                <constraint firstAttribute="trailing" secondItem="5vi-n2-dj0" secondAttribute="trailing" id="Aqg-yQ-Jsh"/>
+                <constraint firstAttribute="bottom" secondItem="5vi-n2-dj0" secondAttribute="bottom" id="VrW-LJ-kG6"/>
+                <constraint firstItem="5vi-n2-dj0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pPc-YA-gm5"/>
+            </constraints>
+            <size key="customSize" width="128" height="58"/>
+            <connections>
+                <outlet property="addEmojiImage" destination="gly-9Y-zR9" id="Hhk-lu-wwK"/>
+                <outlet property="cellBgView" destination="5vi-n2-dj0" id="yDC-YO-EHX"/>
+                <outlet property="countLabel" destination="CxT-zr-eN8" id="9LB-pU-51S"/>
+                <outlet property="emojiLabel" destination="tyO-8i-xZV" id="d6c-1a-ukX"/>
+            </connections>
+            <point key="canvasLocation" x="39.130434782608695" y="86.383928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addEmojiIcon" width="18" height="14"/>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

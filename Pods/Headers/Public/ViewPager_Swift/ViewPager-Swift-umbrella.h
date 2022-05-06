@@ -1,0 +1,1 @@
+../../../Target Support Files/ViewPager-Swift/ViewPager-Swift-umbrella.h

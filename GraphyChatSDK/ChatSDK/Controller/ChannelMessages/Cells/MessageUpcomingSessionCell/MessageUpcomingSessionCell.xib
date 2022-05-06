@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MessageUpcomingSessionCell" id="gTV-IL-0wX" customClass="MessageUpcomingSessionCell" customModule="Graphy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Epl-XG-Gch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kGW-Tr-Jk1">
+                                <rect key="frame" x="16" y="5" width="343" height="141"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 PM to 7 PM, 8th June" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVl-V8-JVi">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Porter’s five forces and how to identify them for your game" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNt-ql-oUu">
+                                        <rect key="frame" x="0.0" y="36" width="343" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa0-LB-hsD">
+                                        <rect key="frame" x="0.0" y="93" width="343" height="48"/>
+                                        <color key="backgroundColor" name="slate01"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="2Od-u3-M1I"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Join Live">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="joinButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YUp-hs-liZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kGW-Tr-Jk1" secondAttribute="bottom" constant="18" id="1uP-xq-HdO"/>
+                            <constraint firstAttribute="trailing" secondItem="kGW-Tr-Jk1" secondAttribute="trailing" constant="16" id="3sA-JI-Nl8"/>
+                            <constraint firstItem="kGW-Tr-Jk1" firstAttribute="leading" secondItem="Epl-XG-Gch" secondAttribute="leading" constant="16" id="Bt6-sk-rsE"/>
+                            <constraint firstItem="kGW-Tr-Jk1" firstAttribute="top" secondItem="Epl-XG-Gch" secondAttribute="top" constant="5" id="oJO-Uk-rgN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Epl-XG-Gch" secondAttribute="bottom" id="NKO-Fg-kWB"/>
+                <constraint firstAttribute="trailing" secondItem="Epl-XG-Gch" secondAttribute="trailing" constant="18" id="jcR-rb-3pC"/>
+                <constraint firstItem="Epl-XG-Gch" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="t1g-me-UP8"/>
+                <constraint firstItem="Epl-XG-Gch" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vBb-hg-ONO"/>
+            </constraints>
+            <size key="customSize" width="393" height="164"/>
+            <connections>
+                <outlet property="cellView" destination="Epl-XG-Gch" id="NRt-9R-AYv"/>
+                <outlet property="dateLabel" destination="pVl-V8-JVi" id="lUv-bl-aFR"/>
+                <outlet property="joinButton" destination="Aa0-LB-hsD" id="3L1-iv-wsZ"/>
+                <outlet property="stackView" destination="kGW-Tr-Jk1" id="q2h-Xu-GDQ"/>
+                <outlet property="titleLabel" destination="WNt-ql-oUu" id="jvR-Pf-43v"/>
+            </connections>
+            <point key="canvasLocation" x="64.492753623188406" y="89.0625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="slate01">
+            <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
